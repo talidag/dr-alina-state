@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Alina State - Psiholog Clinician Principal | Psihoterapeut | Supervizor |
+      Brașov
+    </title>
+    <meta
+      name="description"
+      content="Psiholog clinician principal, psihoterapeut și supervizor în Brașov. Terapie integrativă pentru copii, adolescenți și adulți. Evaluări psihologice complete."
+    />
+    <meta
+      name="keywords"
+      content="psiholog brasov, psihoterapie, evaluare psihologica, terapie de familie, anxietate, depresie, burnout, supervizare psihologica"
+    />
+    <meta name="author" content="Alina State" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Alina State - Psiholog Clinician Principal",
+        "image": "https://alinastate.ro/images/logo.png",
+        "@id": "https://alinastate.ro",
+        "url": "https://alinastate.ro",
+        "telephone": "+40712345678",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Exemplu 15",
+          "addressLocality": "Brașov",
+          "addressRegion": "BV",
+          "postalCode": "500123",
+          "addressCountry": "RO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.6427,
+          "longitude": 25.5887
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/alinastatepsiholog",
+          "https://www.linkedin.com/in/alinastate"
+        ]
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+      :root {
+        --primary: #8ba8b5;
+        --secondary: #d4b483;
+        --accent: #7a9cc6;
+        --light: #f5f7fa;
+        --dark: #3a4e5e;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: var(--dark);
+        background-color: #ffffff;
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          rgba(245, 247, 250, 0.95) 0%,
+          rgba(210, 230, 240, 0.9) 100%
+        );
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--dark);
+        transform: translateY(-2px);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--secondary);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover:after {
+        width: 100%;
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+        border-radius: 16px;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .language-switcher {
+        transition: all 0.3s ease;
+      }
+
+      .language-switcher:hover {
+        transform: scale(1.1);
+      }
+
+      .floating {
+        animation: floating 6s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .testimonial-card {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer-link {
+        transition: all 0.3s ease;
+      }
+
+      .footer-link:hover {
+        color: var(--secondary);
+        transform: translateX(5px);
+      }
+
+      .active-lang {
+        border-bottom: 2px solid var(--secondary);
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Language Switcher -->
+    <div class="bg-gray-100 py-2 px-4 flex justify-end">
+      <div class="flex space-x-3">
+        <button
+          id="ro-btn"
+          class="language-switcher active-lang font-medium text-gray-700"
+        >
+          <span class="fi fi-ro"></span> RO
+        </button>
+        <button id="en-btn" class="language-switcher font-medium text-gray-500">
+          <span class="fi fi-gb"></span> EN
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <div class="logo text-2xl font-bold text-gray-800">
+                <span class="text-primary">Alina State</span>
+                <span class="text-secondary">.</span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-8">
+              <a
+                href="#despre"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Despre mine</a
+              >
+              <a
+                href="#servicii"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Servicii</a
+              >
+              <a
+                href="#abordare"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Abordarea mea</a
+              >
+              <a
+                href="#blog"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Blog</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Contact</a
+              >
+
+              <a
+                href="#about"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >Services</a
+              >
+              <a
+                href="#approach"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >My Approach</a
+              >
+              <a
+                href="#blog"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >Blog</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="pt-2 pb-3 space-y-1">
+          <a
+            href="#despre"
+            class="block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium text-primary bg-50 lang-ro"
+            >Despre mine</a
+          >
+          <a
+            href="#servicii"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
+            >Servicii</a
+          >
+          <a
+            href="#abordare"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
+            >Abordarea mea</a
+          >
+          <a
+            href="#blog"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
+            >Blog</a
+          >
+          <a
+            href="#contact"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
+            >Contact</a
+          >
+
+          <a
+            href="#about"
+            class="block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium text-primary bg-50 lang-en hidden"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-en hidden"
+            >Services</a
+          >
+          <a
+            href="#approach"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-en hidden"
+            >My Approach</a
+          >
+          <a
+            href="#blog"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-en hidden"
+            >Blog</a
+          >
+          <a
+            href="#contact"
+            class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-en hidden"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:items-center md:justify-between">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 lang-ro"
+            >
+              Psihoterapie adaptată nevoilor tale
+            </h1>
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 lang-en hidden"
+            >
+              Psychotherapy tailored to your needs
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 max-w-lg lang-ro">
+              Sunt Alina State, psiholog clinician principal și psihoterapeut.
+              Îți ofer un spațiu sigur pentru explorare, înțelegere și creștere
+              personală.
+            </p>
+            <p class="text-lg text-gray-600 mb-8 max-w-lg lang-en hidden">
+              I'm Alina State, principal clinical psychologist and
+              psychotherapist. I offer you a safe space for exploration,
+              understanding and personal growth.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#contact"
+                class="btn-primary text-white px-6 py-3 rounded-full font-medium lang-ro"
+                >Programează o consultație</a
+              >
+              <a
+                href="#contact"
+                class="btn-primary text-black px-6 py-3 rounded-full font-medium lang-en hidden"
+                >Schedule a consultation</a
+              >
+              <a
+                href="#servicii"
+                class="bg-white text-gray-800 px-6 py-3 rounded-full font-medium border border-gray-200 hover:bg-gray-50 lang-ro"
+                >Serviciile mele</a
+              >
+              <a
+                href="#services"
+                class="bg-white text-gray-800 px-6 py-3 rounded-full font-medium border border-gray-200 hover:bg-gray-50 lang-en hidden"
+                >My services</a
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white shadow-xl overflow-hidden border-8 border-white"
+            >
+              <img
+                src="./images/78479061_10221359768686401_2881322322835275776_n.jpg"
+                alt="Alina State Psiholog"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="despre" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Despre mine
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            About me
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="md:flex md:items-center md:space-x-12">
+          <div class="md:w-1/3 mb-8 md:mb-0">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+              <div
+                class="flex items-center justify-center w-20 h-20 rounded-full bg-primary bg-opacity-10 text-primary mx-auto mb-6"
+              >
+                <i class="fas fa-graduation-cap text-3xl"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-center text-gray-800 mb-4 lang-ro"
+              >
+                Calificări profesionale
+              </h3>
+              <h3
+                class="text-xl font-semibold text-center text-gray-800 mb-4 lang-en hidden"
+              >
+                Professional qualifications
+              </h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Psiholog clinician principal
+                </li>
+                <li class="flex items-start lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Psiholog specialist / Supervizor - psihologie aplicată în
+                  domeniul Apărării şi Securităţii Naţionale
+                </li>
+                <li class="flex items-start lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Psihoterapeut
+                </li>
+
+                <li class="flex items-start lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Principal clinical psychologist
+                </li>
+                <li class="flex items-start lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Specialist psychologist / Supervisor - applied psychology in
+                  National Defense and Security
+                </li>
+                <li class="flex items-start lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Psychotherapist
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:w-2/3">
+            <div class="mb-8">
+              <p class="text-gray-600 mb-6 text-lg leading-relaxed lang-ro">
+                Membru în Colegiul Psihologilor din România. Psihoterapeut
+                colaborator Cognitrom (Cluj-Napoca), specializat în utilizarea
+                de platforme digitale pentru evaluare și intervenție psihologică
+                la copii și adulți.
+              </p>
+              <p
+                class="text-gray-600 mb-6 text-lg leading-relaxed lang-en hidden"
+              >
+                Member of the Romanian Psychologists College. Collaborating
+                psychotherapist at Cognitrom (Cluj-Napoca), specialized in using
+                digital platforms for psychological assessment and intervention
+                for children and adults.
+              </p>
+
+              <p class="text-gray-600 mb-6 text-lg leading-relaxed lang-ro">
+                Am lucrat de-a lungul carierei mele în instituții publice și în
+                mediul privat, atât cu copii, cât și cu adulți, în contexte
+                diverse. Cred în capacitatea oamenilor de a-și transforma
+                dificultățile în oportunități de creștere.
+              </p>
+              <p
+                class="text-gray-600 mb-6 text-lg leading-relaxed lang-en hidden"
+              >
+                Throughout my career I've worked in public institutions and
+                private practice, with both children and adults in various
+                contexts. I believe in people's ability to transform their
+                difficulties into opportunities for growth.
+              </p>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+                Acreditații și rețele de specialitate
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden"
+              >
+                Accreditations and professional networks
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  PON – Cognikit
+                </div>
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Ped Online
+                </div>
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Depreter
+                </div>
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  PAXOnline
+                </div>
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  CCPOnline
+                </div>
+                <div class="flex items-center lang-ro">
+                  <span class="text-secondary mr-2">•</span>
+                  Testare psihologică online
+                </div>
+
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  PON – Cognikit
+                </div>
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Ped Online
+                </div>
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Depreter
+                </div>
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  PAXOnline
+                </div>
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  CCPOnline
+                </div>
+                <div class="flex items-center lang-en hidden">
+                  <span class="text-secondary mr-2">•</span>
+                  Online psychological testing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicii" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Servicii
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            Services
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lang-ro">
+            Ofer servicii de psihoterapie, evaluare psihologică și supervizare
+            adaptate nevoilor individuale.
+          </p>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lang-en hidden">
+            I offer psychotherapy, psychological assessment and supervision
+            services tailored to individual needs.
+          </p>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-heart text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Psihoterapie individuală
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Individual psychotherapy
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Pentru copii, adolescenți și adulți care întâmpină dificultăți
+              emoționale, de relaționare sau comportamentale.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              For children, adolescents and adults facing emotional, relational
+              or behavioral difficulties.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-users text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Psihoterapie de cuplu și familie
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Couple and family therapy
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Ajut cuplurile și familiile să își îmbunătățească comunicarea și
+              să rezolve conflictele într-un mod constructiv.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              I help couples and families improve their communication and
+              resolve conflicts in a constructive way.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-clipboard-check text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Evaluări psihologice clinice
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Clinical psychological assessments
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Evaluări pentru Comisia de expertiză a capacității de muncă,
+              încadrare în grad de handicap, inițiere tratament psihiatric.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              Assessments for work capacity evaluation, disability grading,
+              psychiatric treatment initiation.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Evaluări pentru permis de armă
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Weapon permit evaluations
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Evaluări psihologice pentru obținerea sau prelungirea permisului
+              de armă (letală și neletală), conform legislației.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              Psychological evaluations for obtaining or extending weapon
+              permits (lethal and non-lethal), according to legislation.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-chalkboard-teacher text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Supervizare în psihologie clinică
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Clinical psychology supervision
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Supervizare pentru psihologii care activează în domeniul clinic
+              sau în domeniul apărării și securității naționale.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              Supervision for psychologists working in clinical field or in
+              national defense and security.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-6"
+            >
+              <i class="fas fa-laptop-house text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-ro">
+              Servicii online
+            </h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 lang-en hidden">
+              Online services
+            </h3>
+            <p class="text-gray-600 mb-6 lang-ro">
+              Psihoterapie și evaluare psihologică prin platforme digitale
+              sigure, pentru cei care nu pot ajunge în cabinet.
+            </p>
+            <p class="text-gray-600 mb-6 lang-en hidden">
+              Psychotherapy and psychological assessment through secure digital
+              platforms for those who cannot come to the office.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="abordare" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Abordarea mea
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            My Approach
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="md:flex md:items-center md:space-x-12">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6 lang-ro">
+                Psihoterapie integrativă
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-6 lang-en hidden"
+              >
+                Integrative psychotherapy
+              </h3>
+
+              <p class="text-gray-600 mb-6 leading-relaxed lang-ro">
+                Abordarea mea psihoterapeutică este integrativă – utilizez
+                metode validate științific, adaptate fiecărei persoane și
+                fiecărei situații de viață. Combin tehnici din psihoterapia
+                adleriană, cognitiv-comportamentală și intervenții moderne
+                online.
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed lang-en hidden">
+                My psychotherapeutic approach is integrative - I use
+                scientifically validated methods, adapted to each person and
+                life situation. I combine techniques from Adlerian
+                psychotherapy, cognitive-behavioral therapy and modern online
+                interventions.
+              </p>
+
+              <p class="text-gray-600 mb-6 leading-relaxed lang-ro">
+                Cred că relația terapeutică este fundația oricărei schimbări
+                reale. Psihoterapia este un spațiu sigur în care poți explora în
+                profunzime experiențele tale, descoperi sens și resurse
+                interioare, transforma vulnerabilitatea în putere și reconstrui
+                o relație mai bună cu tine și cu ceilalți.
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed lang-en hidden">
+                I believe the therapeutic relationship is the foundation of any
+                real change. Psychotherapy is a safe space where you can deeply
+                explore your experiences, discover meaning and inner resources,
+                transform vulnerability into strength and rebuild a better
+                relationship with yourself and others.
+              </p>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-primary bg-opacity-5 p-6 rounded-xl">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-4"
+                >
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-ro">
+                  Relația terapeutică
+                </h4>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-en hidden">
+                  Therapeutic relationship
+                </h4>
+                <p class="text-sm text-gray-600 lang-ro">
+                  Bazată pe încredere, respect și colaborare
+                </p>
+                <p class="text-sm text-gray-600 lang-en hidden">
+                  Based on trust, respect and collaboration
+                </p>
+              </div>
+
+              <div class="bg-secondary bg-opacity-5 p-6 rounded-xl">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center text-secondary mb-4"
+                >
+                  <i class="fas fa-user-cog"></i>
+                </div>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-ro">
+                  Adaptare individuală
+                </h4>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-en hidden">
+                  Individual adaptation
+                </h4>
+                <p class="text-sm text-gray-600 lang-ro">
+                  Intervenții personalizate pentru fiecare client
+                </p>
+                <p class="text-sm text-gray-600 lang-en hidden">
+                  Personalized interventions for each client
+                </p>
+              </div>
+
+              <div class="bg-accent bg-opacity-5 p-6 rounded-xl">
+                <div
+                  class="w-12 h-12 rounded-full bg-accent bg-opacity-10 flex items-center justify-center text-accent mb-4"
+                >
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-ro">
+                  Metode științifice
+                </h4>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-en hidden">
+                  Scientific methods
+                </h4>
+                <p class="text-sm text-gray-600 lang-ro">
+                  Tehnici validate prin cercetare
+                </p>
+                <p class="text-sm text-gray-600 lang-en hidden">
+                  Research-validated techniques
+                </p>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-xl">
+                <div
+                  class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 mb-4"
+                >
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-ro">
+                  Dezvoltare holistică
+                </h4>
+                <h4 class="font-semibold text-gray-800 mb-2 lang-en hidden">
+                  Holistic development
+                </h4>
+                <p class="text-sm text-gray-600 lang-ro">
+                  Atenție la toate aspectele vieții
+                </p>
+                <p class="text-sm text-gray-600 lang-en hidden">
+                  Attention to all life aspects
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Părerile clienților
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            Client testimonials
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card bg-white p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/43.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Ana M.</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic lang-ro">
+              "Sesiunile cu doamna psiholog m-au ajutat să înțeleg mai bine
+              anumite aspecte din viața mea și să găsesc modalități să le
+              îmbunătățesc. Abordarea ei caldă și profesională m-a făcut să mă
+              simt încrezătoare și în siguranță."
+            </p>
+            <p class="text-gray-600 italic lang-en hidden">
+              "The sessions with the psychologist helped me better understand
+              certain aspects of my life and find ways to improve them. Her warm
+              and professional approach made me feel confident and safe."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card bg-white p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Mihai T.</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic lang-ro">
+              "După doar câteva ședințe de terapie de cuplu, relația noastră s-a
+              îmbunătățit semnificativ. Recomand cu încredere serviciile doamnei
+              psiholog pentru profesionalism și rezultate."
+            </p>
+            <p class="text-gray-600 italic lang-en hidden">
+              "After just a few couples therapy sessions, our relationship
+              improved significantly. I confidently recommend the psychologist's
+              services for professionalism and results."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card bg-white p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Elena P.</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic lang-ro">
+              "Supervizarea cu doamna psiholog a fost extrem de utilă pentru
+              dezvoltarea mea profesională. Îmi oferă perspective noi și mă
+              ajută să găsesc soluții practice în activitatea mea cu clienții."
+            </p>
+            <p class="text-gray-600 italic lang-en hidden">
+              "Supervision with the psychologist was extremely useful for my
+              professional development. She offers me new perspectives and helps
+              me find practical solutions in my work with clients."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Articole și resurse
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            Articles and resources
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lang-ro">
+            Informații utile despre sănătate mentală și dezvoltare personală.
+          </p>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lang-en hidden">
+            Useful information about mental health and personal development.
+          </p>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Blog post"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-ro"
+              >
+                Sănătate mentală
+              </div>
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-en hidden"
+              >
+                Mental health
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 lang-ro">
+                Cum să gestionezi stresul în perioade dificile
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-3 lang-en hidden"
+              >
+                How to manage stress in difficult times
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 lang-ro">
+                Strategii practice pentru reducerea stresului și menținerea
+                echilibrului emoțional.
+              </p>
+              <p class="text-gray-600 text-sm mb-4 lang-en hidden">
+                Practical strategies for reducing stress and maintaining
+                emotional balance.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-ro"
+                >Citește mai mult →</a
+              >
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-en hidden"
+                >Read more →</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Blog post"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-ro"
+              >
+                Relații
+              </div>
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-en hidden"
+              >
+                Relationships
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 lang-ro">
+                5 principii pentru o comunicare sănătoasă în cuplu
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-3 lang-en hidden"
+              >
+                5 principles for healthy communication in a couple
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 lang-ro">
+                Cum să îmbunătățești relația prin comunicare eficientă și
+                respect reciproc.
+              </p>
+              <p class="text-gray-600 text-sm mb-4 lang-en hidden">
+                How to improve your relationship through effective communication
+                and mutual respect.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-ro"
+                >Citește mai mult →</a
+              >
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-en hidden"
+                >Read more →</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Blog post"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-ro"
+              >
+                Dezvoltare personală
+              </div>
+              <div
+                class="text-xs font-semibold text-primary uppercase tracking-wider mb-2 lang-en hidden"
+              >
+                Personal development
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 lang-ro">
+                Cum să-ți construiești reziliența psihologică
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-3 lang-en hidden"
+              >
+                How to build psychological resilience
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 lang-ro">
+                Tehnici pentru a deveni mai rezistent la stres și adversități.
+              </p>
+              <p class="text-gray-600 text-sm mb-4 lang-en hidden">
+                Techniques to become more resistant to stress and adversity.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-ro"
+                >Citește mai mult →</a
+              >
+              <a
+                href="#"
+                class="text-primary font-medium text-sm hover:text-primary-dark lang-en hidden"
+                >Read more →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary lang-ro"
+          >
+            Vezi toate articolele
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary lang-en hidden"
+          >
+            View all articles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">Contact</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            Contact
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="md:flex md:space-x-8">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6 lang-ro">
+                Programează o consultație
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-6 lang-en hidden"
+              >
+                Schedule a consultation
+              </h3>
+
+              <form>
+                <div class="mb-6">
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-ro"
+                    >Nume complet</label
+                  >
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-en hidden"
+                    >Full name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-primary"
+                    placeholder="Ion Popescu"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-ro"
+                    >Adresă de email</label
+                  >
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-en hidden"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-primary"
+                    placeholder="ion.popescu@example.com"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-ro"
+                    >Număr de telefon</label
+                  >
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-en hidden"
+                    >Phone number</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-primary"
+                    placeholder="0722 123 456"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="service"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-ro"
+                    >Tip de serviciu</label
+                  >
+                  <label
+                    for="service"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-en hidden"
+                    >Service type</label
+                  >
+                  <select
+                    id="service"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-primary"
+                  >
+                    <option value="" class="lang-ro">
+                      Selectează un serviciu
+                    </option>
+                    <option value="" class="lang-en hidden">
+                      Select a service
+                    </option>
+                    <option value="individual" class="lang-ro">
+                      Psihoterapie individuală
+                    </option>
+                    <option value="individual" class="lang-en hidden">
+                      Individual psychotherapy
+                    </option>
+                    <option value="couple" class="lang-ro">
+                      Psihoterapie de cuplu/familie
+                    </option>
+                    <option value="couple" class="lang-en hidden">
+                      Couple/family therapy
+                    </option>
+                    <option value="evaluation" class="lang-ro">
+                      Evaluare psihologică
+                    </option>
+                    <option value="evaluation" class="lang-en hidden">
+                      Psychological evaluation
+                    </option>
+                    <option value="supervision" class="lang-ro">
+                      Supervizare
+                    </option>
+                    <option value="supervision" class="lang-en hidden">
+                      Supervision
+                    </option>
+                  </select>
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-ro"
+                    >Mesaj</label
+                  >
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-1 lang-en hidden"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-primary"
+                    placeholder="Scrieți mesajul dumneavoastră aici..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-black px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition duration-300 lang-ro"
+                >
+                  Trimite mesaj
+                </button>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-black px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition duration-300 lang-en hidden"
+                >
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-white p-8 rounded-xl shadow-sm h-full">
+              <h3 class="text-xl font-semibold text-gray-800 mb-6 lang-ro">
+                Informații de contact
+              </h3>
+              <h3
+                class="text-xl font-semibold text-gray-800 mb-6 lang-en hidden"
+              >
+                Contact information
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary"
+                    >
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-gray-500 lang-ro">
+                      Adresă cabinet
+                    </h4>
+                    <h4
+                      class="text-sm font-medium text-gray-500 lang-en hidden"
+                    >
+                      Office address
+                    </h4>
+                    <p class="text-base font-medium text-gray-800">
+                      Strada Exemplu 15, Brașov, România
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary"
+                    >
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-gray-500 lang-ro">
+                      Telefon
+                    </h4>
+                    <h4
+                      class="text-sm font-medium text-gray-500 lang-en hidden"
+                    >
+                      Phone
+                    </h4>
+                    <p class="text-base font-medium text-gray-800">
+                      +40 712 345 678
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                    <p class="text-base font-medium text-gray-800">
+                      contact@alinastate.ro
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary"
+                    >
+                      <i class="fas fa-clock"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-gray-500 lang-ro">
+                      Program
+                    </h4>
+                    <h4
+                      class="text-sm font-medium text-gray-500 lang-en hidden"
+                    >
+                      Schedule
+                    </h4>
+                    <p class="text-base font-medium text-gray-800 mb-1 lang-ro">
+                      Luni - Vineri: 09:00 - 18:00
+                    </p>
+                    <p
+                      class="text-base font-medium text-gray-800 mb-1 lang-en hidden"
+                    >
+                      Monday - Friday: 09:00 - 18:00
+                    </p>
+                    <p class="text-base font-medium text-gray-800 lang-ro">
+                      Sâmbătă: 10:00 - 14:00
+                    </p>
+                    <p
+                      class="text-base font-medium text-gray-800 lang-en hidden"
+                    >
+                      Saturday: 10:00 - 14:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="text-sm font-medium text-gray-500 mb-4 lang-ro">
+                  Urmărește-mă pe
+                </h4>
+                <h4
+                  class="text-sm font-medium text-gray-500 mb-4 lang-en hidden"
+                >
+                  Follow me on
+                </h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-gray-400 transition"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-gray-400 transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-gray-400 transition"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-8 h-64 rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44619.01837929935!2d25.575277!3d45.6427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDM4JzMzLjciTiAyNcKwMzQnMzcuOCJF!5e0!3m2!1sen!2sro!4v1620000000000!5m2!1sen!2sro"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-black py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-8 md:mb-0">
+            <div class="logo text-2xl font-bold text-black mb-4">
+              <span>Alina State</span>
+              <span class="text-secondary">.</span>
+            </div>
+            <p class="text-gray-900 max-w-xs lang-ro">
+              Psiholog clinician principal, psihoterapeut și supervizor în
+              Brașov. Ofer servicii de psihoterapie, evaluare psihologică și
+              supervizare.
+            </p>
+            <p class="text-gray-900 max-w-xs lang-en hidden">
+              Principal clinical psychologist, psychotherapist and supervisor in
+              Brașov. I offer psychotherapy, psychological assessment and
+              supervision services.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-ro"
+              >
+                Link-uri rapide
+              </h3>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-en hidden"
+              >
+                Quick links
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#despre"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Despre mine</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#servicii"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Servicii</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#abordare"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Abordarea mea</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Contact</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#about"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#approach"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >My Approach</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-ro"
+              >
+                Servicii
+              </h3>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-en hidden"
+              >
+                Services
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Psihoterapie individuală</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Psihoterapie de cuplu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Evaluări psihologice</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Supervizare</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Servicii online</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Individual therapy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Couple therapy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Psychological assessments</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Supervision</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >Online services</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-ro"
+              >
+                Contact
+              </h3>
+              <h3
+                class="text-sm font-semibold text-secondary uppercase tracking-wider mb-4 lang-en hidden"
+              >
+                Contact
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <i class="fas fa-map-marker-alt text-secondary mr-2"></i>
+                  <span>Brașov, România</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-phone-alt text-secondary mr-2"></i>
+                  <span>+40 712 345 678</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-envelope text-secondary mr-2"></i>
+                  <span>contact@alinastate.ro</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-700">
+          <div class="md:flex md:items-center md:justify-between">
+            <div class="text-center md:text-left">
+              <p class="text-gray-800 text-sm lang-ro">
+                &copy; 2025 Alina State. Toate drepturile rezervate.
+              </p>
+              <p class="text-gray-800 text-sm lang-en hidden">
+                &copy; 2025 Alina State. All rights reserved.
+              </p>
+            </div>
+            <div class="mt-4 md:mt-0">
+              <ul class="flex justify-center md:justify-end space-x-6">
+                <li>
+                  <a href="#" class="text-gray-800 hover:text-gray-400">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-800 hover:text-gray-400">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-800 hover:text-gray-400">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 404 Page (hidden by default) -->
+    <div
+      id="page-404"
+      class="hidden fixed inset-0 bg-white z-50 flex items-center justify-center"
+    >
+      <div class="text-center max-w-md px-4">
+        <h1 class="text-6xl font-bold text-primary mb-6">404</h1>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+          Pagina nu a fost găsită
+        </h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+          Page not found
+        </h2>
+        <p class="text-gray-600 mb-8 lang-ro">
+          Ne pare rău, pagina pe care încercați să o accesați nu există sau a
+          fost mutată.
+        </p>
+        <p class="text-gray-600 mb-8 lang-en hidden">
+          We're sorry, the page you're trying to access doesn't exist or has
+          been moved.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-primary text-black px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition duration-300 lang-ro"
+          >Înapoi la pagina principală</a
+        >
+        <a
+          href="#"
+          class="inline-block bg-primary text-black px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition duration-300 lang-en hidden"
+          >Back to home page</a
+        >
+      </div>
+    </div>
+
+    <script>
+      // Language switcher functionality
+      document.getElementById("ro-btn").addEventListener("click", function () {
+        document
+          .querySelectorAll(".lang-ro")
+          .forEach((el) => el.classList.remove("hidden"));
+        document
+          .querySelectorAll(".lang-en")
+          .forEach((el) => el.classList.add("hidden"));
+        document.getElementById("ro-btn").classList.add("active-lang");
+        document.getElementById("en-btn").classList.remove("active-lang");
+      });
+
+      document.getElementById("en-btn").addEventListener("click", function () {
+        document
+          .querySelectorAll(".lang-en")
+          .forEach((el) => el.classList.remove("hidden"));
+        document
+          .querySelectorAll(".lang-ro")
+          .forEach((el) => el.classList.add("hidden"));
+        document.getElementById("en-btn").classList.add("active-lang");
+        document.getElementById("ro-btn").classList.remove("active-lang");
+      });
+
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.add("hidden");
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Simulate 404 page (for demonstration)
+      // To trigger it, you would normally do this on the server when a page is not found
+      // setTimeout(() => {
+      //     document.getElementById('page-404').classList.remove('hidden');
+      // }, 3000);
+    </script>
+  </body>
+</html>
