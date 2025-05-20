@@ -21,6 +21,10 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <head>
+      <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    </head>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -33,13 +37,13 @@
         "image": "https://alinastate.ro/images/logo.png",
         "@id": "https://alinastate.ro",
         "url": "https://alinastate.ro",
-        "telephone": "+40712345678",
+        "telephone": "+40770595825",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Strada Exemplu 15",
+          "streetAddress": "Strada Înfrățirii 7",
           "addressLocality": "Brașov",
           "addressRegion": "BV",
-          "postalCode": "500123",
+          "postalCode": "500331",
           "addressCountry": "RO"
         },
         "geo": {
@@ -55,7 +59,7 @@
         },
         "sameAs": [
           "https://www.facebook.com/alinastatepsiholog",
-          "https://www.linkedin.com/in/alinastate"
+          "https://www.linkedin.com/in/alina-state-618242198/"
         ]
       }
     </script>
@@ -63,11 +67,11 @@
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 
       :root {
-        --primary: #8ba8b5;
-        --secondary: #d4b483;
-        --accent: #7a9cc6;
-        --light: #f5f7fa;
-        --dark: #3a4e5e;
+        --primary: #847593; /* Muted lavender-gray */
+        --secondary: #b0a8b9; /* Soft desaturated blue */
+        --accent: #c9a3a3; /* Dusty rose */
+        --light: #f5f3f7; /* Very pale lavender-tinted white */
+        --dark: #3e3a4d; /* Deep desaturated plum */
       }
 
       body {
@@ -92,11 +96,7 @@
       }
 
       .hero-gradient {
-        background: linear-gradient(
-          135deg,
-          rgba(245, 247, 250, 0.95) 0%,
-          rgba(210, 230, 240, 0.9) 100%
-        );
+        background: linear-gradient(135deg, #f5f6f8 0%, #dfe3ea 100%);
       }
 
       .btn-primary {
@@ -207,9 +207,13 @@
         <div class="flex justify-between h-20 items-center">
           <div class="flex items-center">
             <div class="flex-shrink-0 flex items-center">
-              <div class="logo text-2xl font-bold text-gray-800">
-                <span class="text-primary">Alina State</span>
-                <span class="text-secondary">.</span>
+              <div
+                class="logo text-2xl font-bold text-gray-800 flex items-center gap-2"
+              >
+                <img src="./images/logo-f.png" alt="" class="w-10" />
+                <span class="text-primary" style="color: #847593"
+                  >Alina State</span
+                >
               </div>
             </div>
           </div>
@@ -400,7 +404,7 @@
           </div>
           <div class="md:w-1/2 flex justify-center">
             <div
-              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white shadow-xl overflow-hidden border-8 border-white"
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white shadow-xl overflow-hidden"
             >
               <img
                 src="./images/78479061_10221359768686401_2881322322835275776_n.jpg"
@@ -1244,7 +1248,7 @@
                     Office address
                   </h4>
                   <p class="text-base font-medium text-gray-800">
-                    Strada Exemplu 15, Brașov, România
+                    Strada Înfrățirii 7, Brașov, România
                   </p>
                 </div>
               </div>
@@ -1265,7 +1269,7 @@
                     Phone
                   </h4>
                   <p class="text-base font-medium text-gray-800">
-                    <a href="tel:+40712345678">+40 712 345 678</a>
+                    <a href="tel:+40770595825">+40 770 595 825</a>
                   </p>
                 </div>
               </div>
@@ -1281,8 +1285,8 @@
                 <div class="ml-4">
                   <h4 class="text-sm font-medium text-gray-500">Email</h4>
                   <p class="text-base font-medium text-gray-800">
-                    <a href="mailto:contact@alinastate.ro"
-                      >contact@alinastate.ro</a
+                    <a href="mailto:alina.state74@gmail.com"
+                      >alina.state74@gmail.com</a
                     >
                   </p>
                 </div>
@@ -1311,12 +1315,6 @@
                   >
                     Monday - Friday: 09:00 - 18:00
                   </p>
-                  <p class="text-base font-medium text-gray-800 lang-ro">
-                    Sâmbătă: 10:00 - 14:00
-                  </p>
-                  <p class="text-base font-medium text-gray-800 lang-en hidden">
-                    Saturday: 10:00 - 14:00
-                  </p>
                 </div>
               </div>
             </div>
@@ -1336,14 +1334,9 @@
                   <i class="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/alina-state-618242198/"
                   class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-gray-400 transition"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-gray-400 transition"
+                  target="_blank"
                 >
                   <i class="fab fa-linkedin-in"></i>
                 </a>
@@ -1356,7 +1349,7 @@
             class="md:w-1/2 h-[500px] rounded-xl overflow-hidden mt-8 md:mt-0"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44619.01837929935!2d25.575277!3d45.6427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDM4JzMzLjciTiAyNcKwMzQnMzcuOCJF!5e0!3m2!1sen!2sro!4v1620000000000!5m2!1sen!2sro"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=strada%20infratirii%207+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="100%"
               height="100%"
               style="border: 0"
@@ -1580,11 +1573,11 @@
                 </li>
                 <li class="flex items-center">
                   <i class="fas fa-phone-alt text-secondary mr-2"></i>
-                  <span>+40 712 345 678</span>
+                  <span>+40 770 595 825</span>
                 </li>
                 <li class="flex items-center">
                   <i class="fas fa-envelope text-secondary mr-2"></i>
-                  <span>contact@alinastate.ro</span>
+                  <span>alina.state74@gmail.com</span>
                 </li>
               </ul>
             </div>
@@ -1604,17 +1597,21 @@
             <div class="mt-4 md:mt-0">
               <ul class="flex justify-center md:justify-end space-x-6">
                 <li>
-                  <a href="#" class="text-gray-800 hover:text-gray-400">
+                  <a
+                    href="#"
+                    class="text-gray-800 hover:text-gray-400"
+                    target="_blank"
+                  >
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" class="text-gray-800 hover:text-gray-400">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-800 hover:text-gray-400">
+                  <a
+                    href="https://www.linkedin.com/in/alina-state-618242198/"
+                    class="text-gray-800 hover:text-gray-400"
+                    target="_blank"
+                  >
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
