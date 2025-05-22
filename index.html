@@ -29,6 +29,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -899,9 +904,10 @@
     </section>
 
     <!-- Testimonials Section -->
+
     <section class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
             Părerile clienților
           </h2>
@@ -911,116 +917,283 @@
           <div class="w-20 h-1 bg-secondary mx-auto"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl">
-            <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
-              >
-                <img
-                  src="https://randomuser.me/api/portraits/women/43.jpg"
-                  alt="Client"
-                  class="w-full h-full object-cover"
-                />
+        <!-- Swiper for Mobile -->
+        <div class="block md:hidden">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-gray-600 italic lang-ro">
+                  "O prezență caldă, blândă și profundă. Prin profesionalismul
+                  său discret, empatia autentică și etica ireproșabilă, m-a
+                  ghidat cu răbdare spre mine însămi. Am învățat să-mi ascult
+                  gândurile, să-mi înțeleg emoțiile și să-mi găsesc singură
+                  răspunsurile. A fost începutul regăsirii mele. Multumesc pt
+                  asta, M"
+                </p>
+                <p class="text-gray-600 italic lang-en hidden">
+                  "A warm, gentle and profound presence. Through his discreet
+                  professionalism, authentic empathy and impeccable ethics, he
+                  patiently guided me towards myself. I learned to listen to my
+                  thoughts, understand my emotions and find my own answers. It
+                  was the beginning of my rediscovery. Thank you for this, M"
+                </p>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-800">Ana M.</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-gray-600 italic lang-ro">
+                  "Un sprijin real în momente grele. Am apelat la Alina State
+                  după mai multe încercări nereușite de a gestiona singur
+                  problemele personale. Ceea ce am apreciat cel mai mult a fost
+                  naturalețea cu care decurgeau ședințele – fără presiune, fără
+                  clișee, doar o conversație sinceră, bine ghidată, care m-a
+                  ajutat să văd lucrurile din altă perspectivă. Alina m-a ajutat
+                  să conștientizez tiparele de gândire care îmi făceau rău și
+                  m-a susținut în procesul de schimbare cu multă răbdare. Nu a
+                  fost ușor, dar simt că am făcut pași importanți și sănătoși."
+                </p>
+                <p class="text-gray-600 italic lang-en hidden">
+                  "A real support in difficult times. I turned to Alina State
+                  after several unsuccessful attempts to manage my personal
+                  problems on my own. What I appreciated most was the
+                  naturalness with which the sessions flowed – no pressure, no
+                  clichés, just an honest, well-guided conversation, which
+                  helped me see things from a different perspective. Alina
+                  helped me to become aware of the thinking patterns that were
+                  hurting me and supported me in the process of change with
+                  great patience. It was not easy, but I feel that I have taken
+                  important and healthy steps."
+                </p>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="swiper-slide bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-gray-600 italic lang-ro">
+                  "Încă de la prima întâlnire cu doamna psiholog, am simțit că
+                  mă aflu într-un spațiu sigur, în care pot fi sinceră cu mine
+                  însămi. A fost pentru prima dată când am reușit să vorbesc
+                  despre lucruri care m-au afectat profund și despre care nu am
+                  avut curajul să discut niciodată. Mi-a oferit o prezență
+                  calmă, înțelegătoare și empatică, iar asta m-a ajutat să mă
+                  deschid pas cu pas. Nu m-am simțit judecată, grăbită sau
+                  forțată — doar susținută cu răbdare și respect. Îi sunt
+                  recunoscătoare pentru că m-a însoțit cu blândețe pe drumul
+                  acesta deloc ușor, dar atât de necesar."
+                </p>
+                <p class="text-gray-600 italic lang-en hidden">
+                  "From the very first session with the psychologist, I felt
+                  like I was in a safe space where I could finally be honest
+                  with myself. It was the first time I managed to talk about
+                  things that had deeply affected me — things I had never spoken
+                  about before. She offered a calm, understanding, and
+                  empathetic presence that helped me open up, step by step. I
+                  never felt judged, rushed, or pressured — only gently
+                  supported with patience and respect. I am truly grateful to
+                  her for walking beside me through this difficult, yet
+                  much-needed journey."
+                </p>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="swiper-slide bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-gray-600 italic lang-ro">
+                  "O experiență care mi-a schimbat viața. Am ajuns la doamna
+                  psiholog Alina State într-un moment dificil, copleșită de
+                  anxietate și confuzie. Din prima ședință, am simțit că sunt
+                  într-un spațiu sigur, în care pot vorbi deschis fără teama de
+                  a fi judecată. Alina are o capacitate remarcabilă de a asculta
+                  activ și de a ghida cu empatie, fără să forțeze ritmul
+                  procesului. Cu ajutorul ei, am reușit să-mi înțeleg mai bine
+                  emoțiile, să gestionez stresul și să îmi recâștig încrederea
+                  în mine. Profesionalismul, calmul și abordarea caldă fac din
+                  fiecare întâlnire o reală susținere pentru echilibrul meu
+                  interior. Recomand cu încredere terapia alături de Alina State
+                  oricui simte că are nevoie de sprijin psihologic autentic."
+                </p>
+                <p class="text-gray-600 italic lang-en hidden">
+                  "An experience that changed my life. I came to psychologist
+                  Alina State at a difficult time, overwhelmed by anxiety and
+                  confusion. From the first session, I felt that I was in a safe
+                  space, where I could speak openly without fear of being
+                  judged. Alina has a remarkable ability to actively listen and
+                  guide with empathy, without forcing the pace of the process.
+                  With her help, I managed to better understand my emotions,
+                  manage stress and regain my confidence in myself. Her
+                  professionalism, calmness and warm approach make each meeting
+                  a real support for my inner balance. I confidently recommend
+                  therapy with Alina State to anyone who feels they need
+                  authentic psychological support."
+                </p>
+              </div>
+              <!-- Testimonial 5 -->
+              <div class="swiper-slide bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-gray-600 italic lang-ro">
+                  "Am cunoscut-o pe doamna psiholog Alina State când eram un
+                  părinte disperat, fără soluții sau idei, pe un drum ce părea
+                  fără ieșire. Dumneai a fost raza noastră de speranța și
+                  lumină. Orele de terapie ale copilului au fost pentru ea (deși
+                  mică pe atunci) o experiență transformatoare în adevăratul
+                  sens al cuvântului. Vocea caldă, calmă, inconfundabilă, ce
+                  vindecă parcă de la primul cuvânt rostit, tactul, răbdarea,
+                  îmbinate cu profesionalismul și explicațiile detaliate asupra
+                  procesului terapeutic, au făcut această experiență unică și cu
+                  rezultate pe termen lung. Revenim cu drag la dumneai ori de
+                  câte ori este nevoie (rar ce e drept). O recomand cu toată
+                  convingerea, tuturor celor care au nevoie de sprijin."
+                </p>
+                <p class="text-gray-600 italic lang-en hidden">
+                  "I met psychologist Alina State when I was a desperate parent,
+                  without solutions or ideas, on a path that seemed to have no
+                  way out. You were our ray of hope and light. The child's
+                  therapy sessions were for her (although small at the time) a
+                  transformative experience in the true sense of the word. The
+                  warm, calm, unmistakable voice, which heals as if from the
+                  first word spoken, tact, patience, combined with
+                  professionalism and detailed explanations of the therapeutic
+                  process, made this experience unique and with long-term
+                  results. We will gladly return to you whenever necessary
+                  (which is rare). I recommend you with all conviction to all
+                  those who need support."
+                </p>
               </div>
             </div>
-            <p class="text-gray-600 italic lang-ro">
-              "Sesiunile cu doamna psiholog m-au ajutat să înțeleg mai bine
-              anumite aspecte din viața mea și să găsesc modalități să le
-              îmbunătățesc. Abordarea ei caldă și profesională m-a făcut să mă
-              simt încrezătoare și în siguranță."
-            </p>
-            <p class="text-gray-600 italic lang-en hidden">
-              "The sessions with the psychologist helped me better understand
-              certain aspects of my life and find ways to improve them. Her warm
-              and professional approach made me feel confident and safe."
-            </p>
+            <div class="swiper-pagination mt-0"></div>
+          </div>
+        </div>
+
+        <!-- Grid for Desktop -->
+        <div class="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Column 1 -->
+          <div class="space-y-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <p class="text-gray-600 italic lang-ro">
+                "O prezență caldă, blândă și profundă. Prin profesionalismul său
+                discret, empatia autentică și etica ireproșabilă, m-a ghidat cu
+                răbdare spre mine însămi. Am învățat să-mi ascult gândurile,
+                să-mi înțeleg emoțiile și să-mi găsesc singură răspunsurile. A
+                fost începutul regăsirii mele. Multumesc pt asta, M"
+              </p>
+              <p class="text-gray-600 italic lang-en hidden">
+                "A warm, gentle and profound presence. Through his discreet
+                professionalism, authentic empathy and impeccable ethics, he
+                patiently guided me towards myself. I learned to listen to my
+                thoughts, understand my emotions and find my own answers. It was
+                the beginning of my rediscovery. Thank you for this, M"
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <p class="text-gray-600 italic lang-ro">
+                "Un sprijin real în momente grele. Am apelat la Alina State după
+                mai multe încercări nereușite de a gestiona singur problemele
+                personale. Ceea ce am apreciat cel mai mult a fost naturalețea
+                cu care decurgeau ședințele – fără presiune, fără clișee, doar o
+                conversație sinceră, bine ghidată, care m-a ajutat să văd
+                lucrurile din altă perspectivă. Alina m-a ajutat să
+                conștientizez tiparele de gândire care îmi făceau rău și m-a
+                susținut în procesul de schimbare cu multă răbdare. Nu a fost
+                ușor, dar simt că am făcut pași importanți și sănătoși."
+              </p>
+              <p class="text-gray-600 italic lang-en hidden">
+                "A real support in difficult times. I turned to Alina State
+                after several unsuccessful attempts to manage my personal
+                problems on my own. What I appreciated most was the naturalness
+                with which the sessions flowed – no pressure, no clichés, just
+                an honest, well-guided conversation, which helped me see things
+                from a different perspective. Alina helped me to become aware of
+                the thinking patterns that were hurting me and supported me in
+                the process of change with great patience. It was not easy, but
+                I feel that I have taken important and healthy steps."
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <p class="text-gray-600 italic lang-ro">
+                "Încă de la prima întâlnire cu doamna psiholog, am simțit că mă
+                aflu într-un spațiu sigur, în care pot fi sinceră cu mine
+                însămi. A fost pentru prima dată când am reușit să vorbesc
+                despre lucruri care m-au afectat profund și despre care nu am
+                avut curajul să discut niciodată. Mi-a oferit o prezență calmă,
+                înțelegătoare și empatică, iar asta m-a ajutat să mă deschid pas
+                cu pas. Nu m-am simțit judecată, grăbită sau forțată — doar
+                susținută cu răbdare și respect. Îi sunt recunoscătoare pentru
+                că m-a însoțit cu blândețe pe drumul acesta deloc ușor, dar atât
+                de necesar."
+              </p>
+              <p class="text-gray-600 italic lang-en hidden">
+                "From the very first session with the psychologist, I felt like
+                I was in a safe space where I could finally be honest with
+                myself. It was the first time I managed to talk about things
+                that had deeply affected me — things I had never spoken about
+                before. She offered a calm, understanding, and empathetic
+                presence that helped me open up, step by step. I never felt
+                judged, rushed, or pressured — only gently supported with
+                patience and respect. I am truly grateful to her for walking
+                beside me through this difficult, yet much-needed journey."
+              </p>
+            </div>
           </div>
 
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl">
-            <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
-              >
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Client"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-800">Mihai T.</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
+          <!-- Column 2 -->
+          <div class="space-y-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <p class="text-gray-600 italic lang-ro">
+                "O experiență care mi-a schimbat viața. Am ajuns la doamna
+                psiholog Alina State într-un moment dificil, copleșită de
+                anxietate și confuzie. Din prima ședință, am simțit că sunt
+                într-un spațiu sigur, în care pot vorbi deschis fără teama de a
+                fi judecată. Alina are o capacitate remarcabilă de a asculta
+                activ și de a ghida cu empatie, fără să forțeze ritmul
+                procesului. Cu ajutorul ei, am reușit să-mi înțeleg mai bine
+                emoțiile, să gestionez stresul și să îmi recâștig încrederea în
+                mine. Profesionalismul, calmul și abordarea caldă fac din
+                fiecare întâlnire o reală susținere pentru echilibrul meu
+                interior. Recomand cu încredere terapia alături de Alina State
+                oricui simte că are nevoie de sprijin psihologic autentic."
+              </p>
+              <p class="text-gray-600 italic lang-en hidden">
+                "An experience that changed my life. I came to psychologist
+                Alina State at a difficult time, overwhelmed by anxiety and
+                confusion. From the first session, I felt that I was in a safe
+                space, where I could speak openly without fear of being judged.
+                Alina has a remarkable ability to actively listen and guide with
+                empathy, without forcing the pace of the process. With her help,
+                I managed to better understand my emotions, manage stress and
+                regain my confidence in myself. Her professionalism, calmness
+                and warm approach make each meeting a real support for my inner
+                balance. I confidently recommend therapy with Alina State to
+                anyone who feels they need authentic psychological support."
+              </p>
             </div>
-            <p class="text-gray-600 italic lang-ro">
-              "După doar câteva ședințe de terapie de cuplu, relația noastră s-a
-              îmbunătățit semnificativ. Recomand cu încredere serviciile doamnei
-              psiholog pentru profesionalism și rezultate."
-            </p>
-            <p class="text-gray-600 italic lang-en hidden">
-              "After just a few couples therapy sessions, our relationship
-              improved significantly. I confidently recommend the psychologist's
-              services for professionalism and results."
-            </p>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card bg-white p-8 rounded-xl">
-            <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4"
-              >
-                <img
-                  src="https://randomuser.me/api/portraits/women/65.jpg"
-                  alt="Client"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-800">Elena P.</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-              </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <p class="text-gray-600 italic lang-ro">
+                "Am cunoscut-o pe doamna psiholog Alina State când eram un
+                părinte disperat, fără soluții sau idei, pe un drum ce părea
+                fără ieșire. Dumneai a fost raza noastră de speranța și lumină.
+                Orele de terapie ale copilului au fost pentru ea (deși mică pe
+                atunci) o experiență transformatoare în adevăratul sens al
+                cuvântului. Vocea caldă, calmă, inconfundabilă, ce vindecă parcă
+                de la primul cuvânt rostit, tactul, răbdarea, îmbinate cu
+                profesionalismul și explicațiile detaliate asupra procesului
+                terapeutic, au făcut această experiență unică și cu rezultate pe
+                termen lung. Revenim cu drag la dumneai ori de câte ori este
+                nevoie (rar ce e drept). O recomand cu toată convingerea,
+                tuturor celor care au nevoie de sprijin."
+              </p>
+              <p class="text-gray-600 italic lang-en hidden">
+                "I met psychologist Alina State when I was a desperate parent,
+                without solutions or ideas, on a path that seemed to have no way
+                out. You were our ray of hope and light. The child's therapy
+                sessions were for her (although small at the time) a
+                transformative experience in the true sense of the word. The
+                warm, calm, unmistakable voice, which heals as if from the first
+                word spoken, tact, patience, combined with professionalism and
+                detailed explanations of the therapeutic process, made this
+                experience unique and with long-term results. We will gladly
+                return to you whenever necessary (which is rare). I recommend
+                you with all conviction to all those who need support."
+              </p>
             </div>
-            <p class="text-gray-600 italic lang-ro">
-              "Supervizarea cu doamna psiholog a fost extrem de utilă pentru
-              dezvoltarea mea profesională. Îmi oferă perspective noi și mă
-              ajută să găsesc soluții practice în activitatea mea cu clienții."
-            </p>
-            <p class="text-gray-600 italic lang-en hidden">
-              "Supervision with the psychologist was extremely useful for my
-              professional development. She offers me new perspectives and helps
-              me find practical solutions in my work with clients."
-            </p>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Blog Preview Section -->
     <section id="blog" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1717,6 +1890,22 @@
       // setTimeout(() => {
       //     document.getElementById('page-404').classList.remove('hidden');
       // }, 3000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth < 768) {
+          new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        }
+      });
     </script>
   </body>
 </html>
