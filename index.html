@@ -155,6 +155,24 @@
         animation: floating 6s ease-in-out infinite;
       }
 
+      .accordion-item {
+        transition: all 0.3s ease;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      .accordion-item.active .accordion-content {
+        max-height: 300px;
+      }
+      .accordion-icon {
+        transition: transform 0.3s ease;
+      }
+      .accordion-item.active .accordion-icon {
+        transform: rotate(180deg);
+      }
+
       @keyframes floating {
         0% {
           transform: translateY(0px);
@@ -187,6 +205,33 @@
 
       .active-lang {
         border-bottom: 2px solid var(--secondary);
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--secondary, var(--secondary));
+      }
+      .text-indigo-600 {
+        color: var(--secondary) !important;
+      }
+
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 16px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+      }
+
+      .whatsapp-button:hover {
+        background-color: #1ebe5d;
       }
     </style>
   </head>
@@ -239,6 +284,11 @@
                 class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
                 >Abordarea mea</a
               >
+              <a
+                href="#intrebari"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+                >Întrebări frecvente</a
+              >
               <!-- <a
                 href="#blog"
                 class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
@@ -264,6 +314,11 @@
                 href="#approach"
                 class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
                 >My Approach</a
+              >
+              <a
+                href="#questions"
+                class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+                >FAQ</a
               >
               <!-- <a
                 href="#blog"
@@ -319,6 +374,11 @@
             class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
             >Abordarea mea</a
           >
+          <a
+            href="#intrebari"
+            class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-ro"
+            >Întrebări frecvente</a
+          >
           <!-- <a
             href="#blog"
             class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-ro"
@@ -344,6 +404,11 @@
             href="#approach"
             class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 lang-en hidden"
             >My Approach</a
+          >
+          <a
+            href="#questions"
+            class="nav-link text-gray-700 hover:text-gray-900 px-1 text-sm font-medium lang-en hidden"
+            >FAQ</a
           >
           <!-- <a
             href="#blog"
@@ -818,7 +883,7 @@
 
           <div class="md:w-1/2">
             <div class="grid grid-cols-2 gap-6">
-              <div class="bg-gray-100 p-6 rounded-xl">
+              <div class="p-6 rounded-xl">
                 <div
                   class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mb-4"
                 >
@@ -838,7 +903,7 @@
                 </p>
               </div>
 
-              <div class="bg-gray-100 p-6 rounded-xl">
+              <div class="p-6 rounded-xl">
                 <div
                   class="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center text-secondary mb-4"
                 >
@@ -858,7 +923,7 @@
                 </p>
               </div>
 
-              <div class="bg-gray-100 p-6 rounded-xl">
+              <div class="p-6 rounded-xl">
                 <div
                   class="w-12 h-12 rounded-full bg-accent bg-opacity-10 flex items-center justify-center text-accent mb-4"
                 >
@@ -1189,6 +1254,174 @@
                 return to you whenever necessary (which is rare). I recommend
                 you with all conviction to all those who need support."
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="intrebari" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-ro">
+            Întrebări frecvente
+          </h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 lang-en hidden">
+            Frequently Asked Questions
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="space-y-4">
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center p-6 text-left"
+            >
+              <span class="text-lg font-medium text-gray-800">
+                <span class="lang-ro">Cum mă pot programa la o ședință?</span>
+                <span class="lang-en hidden"
+                  >How can I schedule a session?</span
+                >
+              </span>
+              <i class="accordion-icon fas fa-chevron-down text-indigo-600"></i>
+            </button>
+            <div class="accordion-content px-6">
+              <div class="pb-6 text-gray-600">
+                <p>
+                  <span class="lang-ro">
+                    Pentru programări, mă puteți contacta direct prin telefon
+                    sau printr-un mesaj pe WhatsApp. Răspund în cel mai scurt
+                    timp posibil și vom stabili împreună o zi și o oră
+                    potrivită.</span
+                  >
+                  <span class="lang-en hidden">
+                    You can schedule a session by contacting me directly via
+                    phone or WhatsApp message. I will get back to you as soon as
+                    possible, and we’ll agree on a suitable day and time
+                    together.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center p-6 text-left"
+            >
+              <span class="text-lg font-medium text-gray-800">
+                <span class="lang-ro"
+                  >Cum se desfășoară prima ședință de psihoterapie?
+                </span>
+                <span class="lang-en hidden"
+                  >What happens during the first therapy session?
+                </span>
+              </span>
+              <i class="accordion-icon fas fa-chevron-down text-indigo-600"></i>
+            </button>
+            <div class="accordion-content px-6">
+              <div class="pb-6 text-gray-600">
+                <p>
+                  <span class="lang-ro">
+                    Prima ședință este o întâlnire de cunoaștere, în care
+                    discutăm despre motivul pentru care ați ales să începeți
+                    terapia, așteptările pe care le aveți și obiectivele pe care
+                    le putem urmări împreună. Este un spațiu deschis și sigur,
+                    în care puteți vorbi în propriul ritm. Toate informațiile
+                    împărtășite în cadrul ședinței sunt confidențiale,
+                    respectând codul deontologic al profesiei de psiholog.
+                  </span>
+                  <span class="lang-en hidden">
+                    The first session is an introductory meeting where we talk
+                    about your reasons for starting therapy, your expectations,
+                    and the goals we can work on together. It’s a safe and open
+                    space where you can speak at your own pace. All information
+                    shared during the session is confidential and handled in
+                    accordance with the ethical code of the profession.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center p-6 text-left"
+            >
+              <span class="text-lg font-medium text-gray-800">
+                <span class="lang-ro"
+                  >Care este frecvența recomandată a ședințelor de terapie?
+                </span>
+                <span class="lang-en hidden"
+                  >What is the recommended frequency of therapy sessions?
+                </span>
+              </span>
+              <i class="accordion-icon fas fa-chevron-down text-indigo-600"></i>
+            </button>
+            <div class="accordion-content px-6">
+              <div class="pb-6 text-gray-600">
+                <p>
+                  <span class="lang-ro">
+                    Frecvența ședințelor este adaptată în funcție de nevoile
+                    fiecărei persoane. Discutăm împreună și stabilim un ritm
+                    potrivit pentru parcursul tău terapeutic.
+                  </span>
+                  <span class="lang-en hidden">
+                    The frequency of sessions is tailored to each person's
+                    needs. We will decide together on a pace that suits your
+                    therapeutic journey.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center p-6 text-left"
+            >
+              <span class="text-lg font-medium text-gray-800">
+                <span class="lang-ro"
+                  >Ce pot face dacă nu mă simt confortabil după primele ședințe?
+                </span>
+                <span class="lang-en hidden"
+                  >What if I don’t feel comfortable after the first few
+                  sessions?
+                </span>
+              </span>
+              <i class="accordion-icon fas fa-chevron-down text-indigo-600"></i>
+            </button>
+            <div class="accordion-content px-6">
+              <div class="pb-6 text-gray-600">
+                <p>
+                  <span class="lang-ro">
+                    Este firesc ca procesul terapeutic să necesite o perioadă de
+                    acomodare. Relația terapeutică este esențială, iar dacă apar
+                    nelămuriri sau dificultăți, este important să le discutăm
+                    deschis. Vă încurajez să împărtășiți orice disconfort –
+                    împreună putem ajusta ritmul sau abordarea. Scopul meu este
+                    să vă simțiți în siguranță și susținut(ă) în acest proces.
+                  </span>
+                  <span class="lang-en hidden">
+                    It’s normal for the therapeutic process to require an
+                    adjustment period. The relationship between therapist and
+                    client is key, and if there are uncertainties or
+                    difficulties, it’s important to address them openly. I
+                    encourage you to share any discomfort—together, we can
+                    adjust the pace or approach. My goal is for you to feel safe
+                    and supported throughout this journey.
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1590,11 +1823,18 @@
                 </li>
                 <li>
                   <a
+                    href="#intrebari"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
+                    >Întrebări frecvente</a
+                  >
+                </li>
+                <!-- <li>
+                  <a
                     href="#blog"
                     class="footer-link text-gray-900 hover:text-gray-400 lang-ro"
                     >Blog</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a
                     href="#contact"
@@ -1624,11 +1864,19 @@
                     >My Approach</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     href="#blog"
                     class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
                     >Blog</a
+                  >
+                </li> -->
+
+                <li>
+                  <a
+                    href="#questions"
+                    class="footer-link text-gray-900 hover:text-gray-400 lang-en hidden"
+                    >FAQ</a
                   >
                 </li>
                 <li>
@@ -1794,6 +2042,15 @@
       </div>
     </footer>
 
+    <a
+      href="https://wa.me/+40770595825"
+      class="whatsapp-button"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp fa-lg"></i>
+    </a>
+
     <!-- 404 Page (hidden by default) -->
     <div
       id="page-404"
@@ -1889,6 +2146,29 @@
       // setTimeout(() => {
       //     document.getElementById('page-404').classList.remove('hidden');
       // }, 3000);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach((item) => {
+          const header = item.querySelector(".accordion-header");
+
+          header.addEventListener("click", () => {
+            // Close all other accordion items
+            accordionItems.forEach((otherItem) => {
+              if (
+                otherItem !== item &&
+                otherItem.classList.contains("active")
+              ) {
+                otherItem.classList.remove("active");
+              }
+            });
+
+            // Toggle current item
+            item.classList.toggle("active");
+          });
+        });
+      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -1898,6 +2178,7 @@
           new Swiper(".swiper", {
             slidesPerView: 1,
             spaceBetween: 20,
+            autoHeight: true,
             pagination: {
               el: ".swiper-pagination",
               clickable: true,
